@@ -1,0 +1,17 @@
+{
+  "name": "picap-touch-mp3-js",
+  "version": "1.0.0",
+  "main": "touch-mp3.js",
+  "author": "Szymon Kaliski",
+  "license": "CC-BY-SA-3.0",
+  "scripts": {
+    "start": "node touch-mp3.js"
+  },
+  "dependencies": {
+    "left-pad": "^1.1.1",
+    "node-picap": "^1.0.0",
+    "onoff": "^1.1.1",
+    "speaker": "^0.3.0",
+    "web-audio-api": "^0.2.2"
+  }
+}
