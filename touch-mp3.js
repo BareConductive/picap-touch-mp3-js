@@ -40,15 +40,8 @@ var execSync = require('child_process').execSync;
 var MPR121 = require('node-picap');
 var mpr121;
 
-try {
-  // correct address for the Pi Cap - other boards may vary
-  mpr121 = new MPR121('0x5C'); 
-}
-
-catch (e) {
-  console.log(e);
-  process.exit(1);
-}
+// correct address for the Pi Cap - other boards may vary
+mpr121 = new MPR121('0x5C'); 
 
 // set up LED
 var gpioRed   = new Gpio(6,  'out', 'none', { activeLow: true });
